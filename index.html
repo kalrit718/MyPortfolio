@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The portfolio website of Kalindu Rithmal Abayakoon">
+    <title>Home | Portfolio</title>
+
+    <link rel="icon" href="Assets/Images/Icons/face_black_icon.svg">
+
+    <link rel="stylesheet" href="Stylesheets/BasicStyles.css">
+    <link rel="stylesheet" href="Stylesheets/HeaderStyles.css">
+    <link rel="stylesheet" href="Stylesheets/HomeStyles.css">
+    <link rel="stylesheet" href="Stylesheets/FooterStyles.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+        <!-- Page Header -->
+    <header class="greetingSection">
+        <img class="mainHomeImage" src="Assets/Images/BodyImages/MainHomeImage2.jpg" alt="Main Home Image">
+        <h1 class="mainHomeGreeting">HOME</h1>
+        <nav>
+            <div class="mainLogo">
+                <h4>Kalindu Rithmal</h4>
+            </div>
+            <ul class="nav-link">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Certificates.html">Certificates</a></li>
+                <li><a href="Projects.html">Projects</a></li>
+                <li><a href="#footer">Contact</a></li>
+            </ul>
+            <div class="menuToggle" id="menuToggleId">
+                <div class="menuLine1"></div>
+                <div class="menuLine2"></div>
+                <div class="menuLine3"></div>
+            </div>
+        </nav>
+    </header>
+    <br>
+
+    <!-- Home Page Content -->
+    <section class="mainShow">
+        <section class="helloWorld">
+            <img src="Assets/Images/BodyImages/HomePage/helloPanda.png" alt="Hello panda image">
+            <div>
+                <span class="helloWorldLine1">&lt;!--<br>Hello</span>
+                <span class="helloWorldLine2">World<br>--</span>
+            </div>
+        </section>
+        <section class="myCareerPathsWrapper">
+            <section class="myCareerPaths">
+                <span class="careerPathIntro">My name is,</span><br>
+                <span class="careerPathMyName">Kalindu <br>Rithmal</span><br>
+                <div class="effectWrapper">
+                    <span class="staticTxt">And <br>I'm <br>a</span>
+                    <ul class="dynamicTxt">
+                        <li><span>Undergraduate...</span></li>
+                        <li><span>Software developer....</span></li>
+                        <li><span>Web developer...</span></li>
+                    </ul>
+                </div>
+            </section>
+        </section>
+    </section>
+
+    <!-- Page Footer -->
+    <br>
+    <footer id="footer">
+        <section>
+            <h4>Quick Contact</h4><br><br>
+            <div>
+                <span class="myName">Kalindu Rithmal Abayakoon</span>
+                <span class="myAddress">No.115/11, Sadaham Mawatha, Mulleriyawa.</span>
+                <span class="myEmail">kalindu.rithmal@live.com</span>
+            </div>
+        </section>
+        <section>
+            <h4>Keep in Touch</h4><br><br>
+            <form action="mailto:kalindu.rithmal@live.com" method="post">
+                <input type="text" name="fname" id="fname" placeholder="Name" required><br>
+                <input type="email" name="femail" id="femail" placeholder="Email" required><br>
+                <div>
+                    <input type="checkbox" name="fcheckbox" id="fcheckbox">
+                    <label for="fcheckbox">I agree to get notifications.</label>
+                </div><br>
+                <button type="submit" id="fSubmitBtn" disabled>Submit</button>
+            </form>
+        </section>
+        <section>
+            <h4>Social Media</h4><br><br>
+            <ul class="socialLinks">
+                <li><a target="_blank" href="https://github.com/kalrit718"><span>Github</span></a></li>
+                <li><a target="_blank" href="https://www.linkedin.com/in/kalindu-rithmal"><span>LinkedIn</span></a></li>
+                <li><a target="_blank" href="https://twitter.com/TheKalinduR"><span>Twitter</span></a></li>
+                <li><a target="_blank" href="https://www.instagram.com/__thekalindur_._/"><span>Instagram</span></a></li>
+            </ul>
+        </section>
+    </footer>
+
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="JavaScript/HeaderFooterScripts.js"></script>
+</body>
+</html>

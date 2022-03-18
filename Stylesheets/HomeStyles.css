@@ -1,0 +1,269 @@
+.helloWorld {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #5D4954;
+    width: 45%;
+    min-height: 500px;
+    padding: 5px;
+    padding: 90px 5px 90px 5px;
+}
+.helloWorld div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 200px;
+    font-family: 'Inconsolata', monospace;
+    text-shadow: 8px 8px 10px tomato;
+    color: yellow;
+    font-size: 60px;
+}
+.helloWorld div br {
+    display: none;
+}
+.helloWorld span {
+    padding-right: 30px;
+    position: relative;
+}
+.helloWorld .helloWorldLine2::after {
+    content: ">";
+    position: absolute;
+    height: 100%;
+}
+.helloWorld .helloWorldLine2::after {
+    animation: blinker 1.5s infinite;
+}
+.helloWorld img {
+    width: 40%;
+    max-height: 450px;
+}
+.mainShow {
+    display: inline-flex;
+    width: 100%;
+}
+.myCareerPathsWrapper {
+    width: 40%;
+    margin-left: 40px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+.myCareerPaths {
+    color: rgb(214, 205, 205);
+    width: 80%;
+    height: 50%;
+    border: 7px solid #5D4954;
+    border-right: none;
+    border-left: 10px solid;
+    border-image: linear-gradient(to right, #5D4954, transparent) 1;
+    border-radius: 15px;
+    padding: 15px;
+    text-shadow: 2px 2px black;
+    overflow: hidden;
+}
+.myCareerPaths .careerPathIntro {
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+}
+.myCareerPaths .careerPathMyName {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 55px;
+}
+.myCareerPaths .careerPathMyName br {
+    display: none;
+}
+.myCareerPaths .effectWrapper {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 30px;
+    display: inline-flex;
+}
+.myCareerPaths .effectWrapper .staticTxt br {
+    display: none;
+}
+.myCareerPaths .effectWrapper .dynamicTxt {
+    list-style: none;
+    margin-top: 6px;
+    margin-left: 10px;
+    color: tomato;
+    font-weight: bold;
+}
+
+.dynamicTxt li span {
+    position: relative;
+}
+.dynamicTxt li span::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    border-left: 2px solid tomato;
+    background-color: #7a7578;
+    animation: typing 2s steps(22) infinite;
+}
+
+
+@keyframes typing {
+    100% {
+        left: 100%;
+    }
+}
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+@media screen and (max-width:720px) {
+    .helloWorld {
+        display: flex;
+        flex-direction: column;
+        background-color: #5D4954;
+        width: 45%;
+        height: 350px;
+        padding: 10px;
+    }
+    .helloWorld img {
+        width: 80%;
+    }
+    .helloWorld div {
+        font-size: 35px;
+        justify-content: unset;
+        margin-top: 40px;
+        margin-left: 20px;
+    }
+    .helloWorld div br {
+        display: block;
+    }
+    .myCareerPaths .careerPathIntro {
+        font-size: 25px;
+    }
+    .myCareerPaths .careerPathMyName {
+        font-size: 40px;
+    }
+    .myCareerPaths .careerPathMyName br {
+        display: block;
+    }
+    .myCareerPaths .effectWrapper {
+        font-size: 20px;
+        display: block;
+    }
+    .myCareerPathsWrapper {
+        margin: 10px;
+    }
+    .myCareerPaths {
+        color: white;
+        width: 100%;
+        height: 70%;
+    }
+    .myCareerPathsWrapper {
+        width: 50%;
+    }
+    .myCareerPaths .effectWrapper .dynamicTxt {
+        margin-left: 5px;
+    }
+
+}
+@media screen and (min-width:720px) and (max-width:940px) {
+    .helloWorld {
+        display: flex;
+        flex-direction: column;
+        background-color: #5D4954;
+        width: 45%;
+        height: 350px;
+        padding: 10px;
+    }
+    .helloWorld img {
+        width: 60%;
+    }
+    .helloWorld div {
+        font-size: 50px;
+        justify-content: unset;
+        margin-top: 40px;
+    }
+    .myCareerPaths .careerPathIntro {
+        font-size: 25px;
+    }
+    .myCareerPaths .careerPathMyName {
+        font-size: 50px;
+    }
+    .myCareerPaths .careerPathMyName br {
+        display: block;
+    }
+    .myCareerPaths .effectWrapper {
+        font-size: 28px;
+    }
+    .myCareerPathsWrapper {
+        margin: 10px;
+    }
+    .myCareerPaths {
+        color: white;
+        width: 100%;
+        height: 70%;
+    }
+    .myCareerPathsWrapper {
+        width: 50%;
+    }
+    .myCareerPaths .effectWrapper .staticTxt br {
+        display: block;
+    }
+}
+@media screen and (min-width:940px) and (max-width:1080px) {
+    .helloWorld {
+        display: flex;
+        flex-direction: column;
+        background-color: #5D4954;
+        width: 45%;
+        height: 350px;
+        padding: 10px;
+    }
+    .helloWorld div {
+        font-size: 55px;
+        justify-content: unset;
+        margin-top: 40px;
+        margin-left: 25px;
+    }
+    .myCareerPaths .careerPathIntro {
+        font-size: 25px;
+    }
+    .myCareerPaths .careerPathMyName {
+        font-size: 50px;
+    }
+    .myCareerPaths .effectWrapper {
+        font-size: 28px;
+    }
+    .myCareerPathsWrapper {
+        margin: 10px;
+    }
+    .myCareerPaths {
+        color: white;
+        width: 100%;
+        height: 50%;
+    }
+    .myCareerPathsWrapper {
+        width: 50%;
+    }
+}
+@media screen and (min-width:1080px) and (max-width:1400px) {
+    .helloWorld div {
+        font-size: 45px;
+        justify-content: unset;
+        margin-top: 40px;
+        margin-left: 25px;
+    }
+    .myCareerPaths .careerPathIntro {
+        font-size: 25px;
+    }
+    .myCareerPaths .careerPathMyName {
+        font-size: 50px;
+    }
+    .myCareerPaths .effectWrapper {
+        font-size: 28px;
+    }
+    .myCareerPaths {
+        color: white;
+        width: 100%;
+        height: 50%;
+    }
+
+}
